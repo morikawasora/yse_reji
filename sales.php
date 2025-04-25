@@ -19,6 +19,7 @@ function salesList($year, $month)
         ['id' => '000000002', 'datetime' => "$year/$month/01 11:00", 'amount' => 1800],
         ['id' => '000000003', 'datetime' => "$year/$month/02 09:45", 'amount' => 2400],
         ['id' => '000000004', 'datetime' => "$year/$month/03 13:54", 'amount' => 5700],
+        ['id' => '000000004', 'datetime' => "$year/$month/03 14:14", 'amount' => 3160],
     ];
     return $sales;
 }
