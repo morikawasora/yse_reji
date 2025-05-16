@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YSEレジシステム</title>
+  <title>Pico POS</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
   <div class="bg-white p-6 rounded-2xl shadow-xl w-full max-w-md">
-    <h1 class="text-2xl font-bold mb-4 text-center">YSEレジシステム</h1>
+    <h1 class="text-2xl font-bold mb-4 text-center">Pico POS</h1>
 
     <!-- 金額表示欄 -->
     <div class="mb-4">
@@ -41,7 +41,6 @@
       <button class="bg-red-200 hover:bg-red-300 p-3 rounded-lg text-xl" onclick="clearDisplay()">AC</button>
       <button class="bg-indigo-200 hover:bg-indigo-300 p-3 rounded-lg text-xl col-span-2" onclick="saveSales()">計上</button>
       <button class="bg-pink-200 hover:bg-pink-300 p-3 rounded-lg text-xl col-span-2" onclick="showSales()">売上履歴</button>
-      <button class="bg-pink-200 hover:bg-pink-300 p-3 rounded-lg text-xl col-span-2" onclick="CardSales()">カード読み取り</button>
     </div>
   </div>
 
@@ -111,10 +110,6 @@ function appendNumber(num) {
         window.location.href = 'sales.php';
     }
 
-    function CardSales(){
-        window.location.href = 'card.php';
-
-    }
     document.addEventListener('click', (e) => {
       if (e.target.tagName === 'BUTTON' && quantityMode && !isNaN(e.target.textContent)) {
         currentInput += e.target.textContent;
