@@ -2,7 +2,7 @@
 // sales.php - データベースから売上一覧と合計を取得
 
 $dsn = 'mysql:host=localhost;dbname=yse_register;charset=utf8';
-$user = 'root'; // 環境に合わせて変更
+$user = 'root';
 $password = '';
 $options = [
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

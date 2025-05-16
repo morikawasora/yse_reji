@@ -1,5 +1,4 @@
 <?php
-// update.php - 計上処理（DB保存版）
 
 $dsn = 'mysql:host=localhost;dbname=yse_register;charset=utf8';
 $user = 'root'; // 必要に応じて変更
